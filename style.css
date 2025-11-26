@@ -52,6 +52,8 @@ body{
     background: linear-gradient(90deg, var(--primaria), var(--secundaria));
     transition: width 3s ease;
 }
+
+
 menu-link:hover::after{
     width: 100%;
 }
@@ -90,6 +92,7 @@ font-size: 3.2rem;
 color: var(--claro);
 text-align: center;
 margin-bottom: 30px;
+animation: fadeIn 2s ease-in-out;
 }
 .sobre-caixa{
     padding: 2rem;
@@ -99,6 +102,7 @@ margin-bottom: 30px;
     border: solid 2px var(--vidro);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.5);
+    animation: fadeIn 2s ease-in-out;
 }
 .sobre-paragrafo{
     text-align: left;
@@ -106,6 +110,7 @@ margin-bottom: 30px;
     color: var(--claro);
     line-height: 1.6rem;
     transition: opacity 1s, transform 1s ease;
+    animation: fadeIn 2s ease-in-out;
  }
 .habilidades{
     padding: 8rem 2rem;
@@ -126,6 +131,7 @@ margin-bottom: 30px;
     border: solid 2px var(--vidro);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.5);
+    animation: fadeIn 2s ease-in-out;
 }
 
 
@@ -133,6 +139,8 @@ margin-bottom: 30px;
 .lista-skils{
 text-align: center;
 text-decoration: none;
+    animation: fadeIn 2s ease-in-out;
+
 }
 .item-skils{
     font-size: 1.2rem;
@@ -145,6 +153,8 @@ text-decoration: none;
 
 .projetos{
     padding: 6rem 2rem;
+        animation: fadeIn 2s ease-in-out;
+
 }
 .buttons-projetos{
     display: flex;
@@ -196,6 +206,7 @@ width: 100%;
 object-fit: cover;
 
 }
+
 .caixa-texto-projetos{
     padding: 1rem;
 }
@@ -209,7 +220,7 @@ font-size: 5rem;
 
 
 .paragrafo-projetos{
-color: rgba(226, 232, 240, 0.8);
+color: rgba(255, 255, 255, 0.8);
 line-height: 1.25rem;
 }
 
@@ -226,7 +237,7 @@ margin-bottom: 50px;
 .formulario-contato{
 max-width: 600px;
 margin: 0 auto;
- background: rgba(255, 255, 255, 0.5);
+ background: rgba(125, 125, 136, 0.5);
 padding: 2rem;
 border-radius: 14px;
 }
@@ -237,6 +248,9 @@ border-radius: 14px;
     border-radius: 100px;
 }
 
+.campo-form::placeholder{
+    color:#ffffff;
+}
 .grupo-form{
    margin-bottom: 1.5rem; 
 }
@@ -244,18 +258,18 @@ border-radius: 14px;
 width: 100%;
 padding: 1rem;
  background: rgba(255, 255, 255, 0.5);
- color: var(--claro);
+ color: var(--escuro);
  border: 1px solid var(--vidro);
  outline: none;
  border-radius: 12px;
 }
 .campo-form:focus{
-    border-color: var(--secundaria);
-    box-shadow: 0 0 10px rgba(79, 70, 229, 0.4);
+    border-color: var(--white);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }  
 .botao-form{
     color: var(--claro);
-    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    background: linear-gradient(45deg, var(--escuro), var(--secundaria), var(--escuro));
     padding: 1rem 2rem;
     border: none;
     border-radius: 20px;
@@ -280,6 +294,46 @@ padding: 1rem;
                 radial-gradient(circle at 90% 80%, var(--secundaria)0%, transparent 20%),
                 var(--maisescuro);
 }
+.rodape-texto{
+align-items: center;
+text-align:center;
+padding: 1rem;
+color: var(--claro);
+
+}
+.botaocontato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 50px;
+  flex-wrap: nowrap; 
+}
+
+.btn-contato{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background: #121212;
+  border: 1px solid rgba(255,255,255,.15);
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+.btn-contato:hover{
+  transform: translateY(-2px);
+  opacity: .9;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+}
+
 
 @keyframes fadeIn {
     0%   { opacity: 0; transform: translateY(10px); }
